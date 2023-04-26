@@ -1,0 +1,175 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+
+$soft-blue: hsl(215, 51%, 70%);
+$cyan: hsl(178, 100%, 50%);
+$dark-blue-bg: hsl(217, 54%, 11%);
+$dark-blue-card: hsl(216, 50%, 16%);
+$dark-blue-line: hsl(215, 32%, 27%);
+$white: hsl(0, 0%, 100%);
+
+// @mixin icon-border {
+// 	content: '';
+// 	position: absolute;
+// 	width: 18px;
+// 	height: 19px;
+// 	background-repeat: no-repeat;
+// 	background-size: contain;
+// 	transform: translate(-50%, -50%);
+// }
+
+// body {
+// 	display: flex;
+// 	flex-direction: column;
+// 	justify-content: center;
+// 	align-items: center;
+// 	min-height: 100vh;
+// 	padding: 2em 1.4em;
+// 	background-color: $dark-blue-bg;
+// 	font-family: 'Outfit', sans-serif;
+// 	font-weight: 300;
+// 	font-size: 1.8rem;
+// }
+
+// .card {
+// 	max-width: 350px;
+// 	max-height: 600px;
+// 	padding: 1.4em;
+// 	background-color: $dark-blue-card;
+// 	border-radius: 14px;
+
+// 	&__header {
+// 		position: relative;
+// 		border-radius: 8px;
+// 		cursor: pointer;
+
+// 		&::before {
+// 			content: '';
+// 			position: absolute;
+// 			width: 100%;
+// 			height: 98%;
+// 			border-radius: 8px;
+// 			background-color: rgb(0 255 247 / 50%);
+// 			background-image: url('../images/icon-view.svg');
+// 			background-repeat: no-repeat;
+// 			background-position: center;
+// 			opacity: 0;
+// 			transition: opacity 0.3s;
+// 		}
+
+// 		&:hover::before {
+// 			opacity: 1;
+// 		}
+// 	}
+
+// 	&__img {
+// 		width: 100%;
+// 		border-radius: 8px;
+// 	}
+
+// 	&__name {
+// 		margin: 1em 0 0.8em;
+// 		color: $white;
+// 		letter-spacing: 0.3px;
+// 		transition: color 0.3s;
+// 		cursor: pointer;
+
+// 		&:hover {
+// 			color: $cyan;
+// 		}
+// 	}
+
+// 	&__description {
+// 		color: $soft-blue;
+// 		line-height: 1.5em;
+// 	}
+
+// 	&__box {
+// 		display: flex;
+// 		justify-content: space-between;
+// 		align-items: center;
+// 		flex-wrap: wrap;
+// 		margin: 1.2em 0 1em;
+// 		padding-bottom: 1.4em;
+// 		border-bottom: 1px solid $dark-blue-line;
+// 		font-size: 1.6rem;
+// 	}
+
+// 	&__eth {
+// 		position: relative;
+// 		margin-left: 1em;
+// 		margin-right: 2em;
+// 		color: $cyan;
+// 		font-weight: 400;
+// 		letter-spacing: 0.6px;
+
+// 		&::before {
+// 			background-image: url('../images/icon-ethereum.svg');
+// 			@include icon-border;
+// 			top: 53%;
+// 			left: -12%;
+// 		}
+// 	}
+
+// 	&__time {
+// 		position: relative;
+// 		margin: 0.3em 0 0 1.2em;
+// 		color: $soft-blue;
+
+// 		&::before {
+// 			background-image: url('../images/icon-clock.svg');
+// 			@include icon-border;
+// 			top: 53%;
+// 			left: -22%;
+// 		}
+// 	}
+
+// 	&__author {
+// 		display: flex;
+// 		align-items: center;
+// 		color: $soft-blue;
+// 	}
+
+// 	&__hero {
+// 		width: 34px;
+// 		border-radius: 50%;
+// 		border: 1px solid $white;
+// 		margin-right: 0.9em;
+// 	}
+
+// 	&__creation {
+// 		font-size: 1.6rem;
+
+// 		&--name {
+// 			color: $white;
+// 			transition: color 0.3s;
+// 			cursor: pointer;
+
+// 			&:hover {
+// 				color: $cyan;
+// 			}
+// 		}
+// 	}
+// }
+
+// .attribution {
+// 	position: absolute;
+// 	bottom: 5%;
+// 	font-size: 11px;
+// 	text-align: center;
+// 	color: $white;
+// }
+// .attribution a {
+// 	text-decoration: none;
+// 	color: royalblue;
+// }
+
+

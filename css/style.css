@@ -1,0 +1,159 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2em 1.4em;
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+}
+
+.card {
+  max-width: 350px;
+  max-height: 600px;
+  padding: 1.4em;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 14px;
+}
+.card__header {
+  position: relative;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.card__header::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 98%;
+  border-radius: 8px;
+  background-color: rgba(0, 255, 247, 0.5);
+  background-image: url("../images/icon-view.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.card__header:hover::before {
+  opacity: 1;
+}
+.card__img {
+  width: 100%;
+  border-radius: 8px;
+}
+.card__name {
+  margin: 1em 0 0.8em;
+  color: hsl(0, 0%, 100%);
+  letter-spacing: 0.3px;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+.card__name:hover {
+  color: hsl(178, 100%, 50%);
+}
+.card__description {
+  color: hsl(215, 51%, 70%);
+  line-height: 1.5em;
+}
+.card__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 1.2em 0 1em;
+  padding-bottom: 1.4em;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+  font-size: 1.6rem;
+}
+.card__eth {
+  position: relative;
+  margin-left: 1em;
+  margin-right: 2em;
+  color: hsl(178, 100%, 50%);
+  font-weight: 400;
+  letter-spacing: 0.6px;
+}
+.card__eth::before {
+  background-image: url("../images/icon-ethereum.svg");
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 19px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: translate(-50%, -50%);
+  top: 53%;
+  left: -12%;
+}
+.card__time {
+  position: relative;
+  margin: 0.3em 0 0 1.2em;
+  color: hsl(215, 51%, 70%);
+}
+.card__time::before {
+  background-image: url("../images/icon-clock.svg");
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 19px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: translate(-50%, -50%);
+  top: 53%;
+  left: -22%;
+}
+.card__author {
+  display: flex;
+  align-items: center;
+  color: hsl(215, 51%, 70%);
+}
+.card__hero {
+  width: 34px;
+  border-radius: 50%;
+  border: 1px solid hsl(0, 0%, 100%);
+  margin-right: 0.9em;
+}
+.card__creation {
+  font-size: 1.6rem;
+}
+.card__creation--name {
+  color: hsl(0, 0%, 100%);
+  transition: color 0.3s;
+  cursor: pointer;
+}
+.card__creation--name:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.attribution {
+  position: absolute;
+  bottom: 5%;
+  font-size: 11px;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+
+.attribution a {
+  text-decoration: none;
+  color: royalblue;
+}
+
+@media (min-width: 576px) {
+  .card_time {
+    margin: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
